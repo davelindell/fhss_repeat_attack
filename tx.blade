@@ -1,0 +1,11 @@
+set samplerate 38000000
+set bandwidth 28000000
+set frequency 2450000000
+# txvga1 was -14 and txvga2 was 0
+#
+set txvga1 -6
+set txvga2 20
+
+tx config file=output.bin format=bin repeat=100
+tx start
+tx wait

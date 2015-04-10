@@ -1,0 +1,40 @@
+set samplerate 38000000
+set bandwidth 28000000
+
+# to run just do bladeRF-cli -s <name of this script>
+
+set frequency 2410000000
+rx config file=2_41.bin format=bin n=76000000
+rx start
+rx wait
+
+set frequency 2420000000
+rx config file=2_42.bin format=bin n=76000000
+rx start
+rx wait
+
+set frequency 2430000000
+rx config file=2_43.bin format=bin n=76000000
+rx start
+rx wait
+
+set frequency 2440000000
+rx config file=2_44.bin format=bin n=76000000
+rx start
+rx wait
+
+set frequency 2450000000
+rx config file=2_45.bin format=bin n=76000000
+rx start
+rx wait
+
+set frequency 2460000000
+rx config file=2_46.bin format=bin n=76000000
+rx start
+rx wait
+
+set frequency 2470000000
+rx config file=2_47.bin format=bin n=76000000
+rx start
+rx wait
+
